@@ -1,0 +1,30 @@
+.specialtitle {
+  font-weight: 500 !important;
+  font-size: 27px;
+}
+.list,
+.list li {
+  list-style-type: disc !important;
+  font-weight: 500;
+}
+.mainContainer {
+  background-color: var(--mintGreen);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.name {
+  font-weight: 500;
+}
+.desc {
+  width: 60%;
+  text-align: center;
+  font-weight: 300;
+}
+@media screen and (max-width: 767px) {
+  .desc {
+    width: 100%;
+  }
+}

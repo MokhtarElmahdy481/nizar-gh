@@ -1,0 +1,33 @@
+.about-section {
+  background-color: #ceeae2;
+  padding-block: 2rem;
+}
+.goals-section {
+  background-color: #C7CBF0;
+  padding-block: 2rem;
+}
+.custom-card {
+  border: none;
+}
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+
+    
+}
+.image {
+    width: 100%;
+    object-fit: contain;
+}
+.list-item{
+    list-style-type: disc !important;
+}
+.image-list-item{
+  /* max-width: 10rem; */
+  /* height: fit-content; */
+}

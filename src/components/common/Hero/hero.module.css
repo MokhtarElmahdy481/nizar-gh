@@ -1,0 +1,48 @@
+.heroSection {
+  background-image: url("/hero.png");
+  background-size: cover;
+  width: 100vw;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.pageName {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+  opacity: 0.2;
+  font-size: 100px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.text {
+  font-size: 30px;
+  font-weight: 500;
+}
+.descContainer {
+  width: 100vw;
+  height: 160px;
+  display: flex;
+  align-items: center;
+}
+.name {
+  font-weight: 500;
+}
+.jobTitle {
+  font-weight: 300;
+}
+.desc {
+  width: 60%;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .desc {
+    width: 100%;
+  }
+}
