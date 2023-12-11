@@ -618,12 +618,12 @@ export const departments = [
   },
 ];
 export const cases = [
-  { id: 1,img: "", arTitle: "د/خالد المصري",enTitle:"dr.khaled elmasry", arDesc: "فرع الدائري", enDesc: "Ring Branch" },
-  { id: 2,img: "", arTitle: "د/خالد المصري",enTitle:"dr.khaled elmasry", arDesc: "فرع الدائري", enDesc: "Ring Branch" },
-  { id: 3,img: "", arTitle: "د/خالد المصري",enTitle:"dr.khaled elmasry", arDesc: "فرع الدائري", enDesc: "Ring Branch" },
-  { id: 4,img: "", arTitle: "د/خالد المصري",enTitle:"dr.khaled elmasry", arDesc: "فرع الدائري", enDesc: "Ring Branch" },
-  { id: 5,img: "", arTitle: "د/خالد المصري",enTitle:"dr.khaled elmasry", arDesc: "فرع الدائري", enDesc: "Ring Branch" },
-  { id: 6,img: "", arTitle: "د/خالد المصري",enTitle:"dr.khaled elmasry", arDesc: "فرع الدائري", enDesc: "Ring Branch" },
-  { id: 7,img: "", arTitle: "د/خالد المصري",enTitle:"dr.khaled elmasry", arDesc: "فرع الدائري", enDesc: "Ring Branch" },
-  { id: 8,img: "", arTitle: "د/خالد المصري",enTitle:"dr.khaled elmasry", arDesc: "فرع الدائري", enDesc: "Ring Branch" },
+  { id: 1,img: "/assets/patient-1.png", arTitle: "د/خالد المصري",enTitle:"dr.khaled elmasry", arDesc: "فرع الدائري", enDesc: "Ring Branch" },
+  { id: 2,img: "/assets/patient-1.png", arTitle: "د/خالد المصري",enTitle:"dr.khaled elmasry", arDesc: "فرع الدائري", enDesc: "Ring Branch" },
+  { id: 3,img: "/assets/patient-1.png", arTitle: "د/خالد المصري",enTitle:"dr.khaled elmasry", arDesc: "فرع الدائري", enDesc: "Ring Branch" },
+  { id: 4,img: "/assets/patient-1.png", arTitle: "د/خالد المصري",enTitle:"dr.khaled elmasry", arDesc: "فرع الدائري", enDesc: "Ring Branch" },
+  { id: 5,img: "/assets/patient-1.png", arTitle: "د/خالد المصري",enTitle:"dr.khaled elmasry", arDesc: "فرع الدائري", enDesc: "Ring Branch" },
+  { id: 6,img: "/assets/patient-1.png", arTitle: "د/خالد المصري",enTitle:"dr.khaled elmasry", arDesc: "فرع الدائري", enDesc: "Ring Branch" },
+  { id: 7,img: "/assets/patient-1.png", arTitle: "د/خالد المصري",enTitle:"dr.khaled elmasry", arDesc: "فرع الدائري", enDesc: "Ring Branch" },
+  { id: 8,img: "/assets/patient-1.png", arTitle: "د/خالد المصري",enTitle:"dr.khaled elmasry", arDesc: "فرع الدائري", enDesc: "Ring Branch" },
 ];
