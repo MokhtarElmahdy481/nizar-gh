@@ -4,11 +4,11 @@ import { Typography } from "@/configurations/materialconfig";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 
-export default function AboutSection() {
+export default function AboutSection({aboutUs}:{aboutUs:AboutUs}) {
     const {t} = useTranslation()
   return (
     <>
-      <Hero showImg={true} showDesc={false} text={t("about")} />
+      <Hero showImg={true} showDesc={false} text={aboutUs?.headerTitle} />
       <div className="bg-[#CEEAE2] py-3">
         <div className="container mx-auto px-5">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
@@ -59,9 +59,10 @@ export default function AboutSection() {
           </Typography>
         </div>
           <ul className="flex justify-center text-xl gap-8">
-            <li className="list-disc">من أعرق المستشفيات التي نشأت بمنطقة المدينة .</li>
-            <li className="list-disc">من أعرق المستشفيات التي نشأت بمنطقة المدينة .</li>
-            <li className="list-disc">من أعرق المستشفيات التي نشأت بمنطقة المدينة .</li>
+          
+            <li className="list-disc">{aboutUs?.goals[0].goals1}</li>
+            <li className="list-disc">{aboutUs?.goals[1].goals2}</li>
+            <li className="list-disc">{aboutUs?.goals[2].goals3}</li>
           </ul>
       </div>
       <div className="bg-[#CEEAE2] py-3 mb-20">

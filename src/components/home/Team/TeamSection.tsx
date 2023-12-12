@@ -11,6 +11,7 @@ export default function TeamSection() {
   const {t} = useTranslation()
   const swiperOptions = {
     loop: true,
+    
     centeredSlides: true,
     spaceBetween: 0,
     autoplay: {
@@ -33,35 +34,36 @@ export default function TeamSection() {
       },
       1024: {
         slidesPerView: 3,
+        
       },
     },
   };
   return (
-    <div className="py-5">
+    <div className="container mx-auto  py-5">
       <div className="flex justify-center items-center gap-2 mb-10">
           <Typography className="font-bold text-5xl">
             {t("team")}
           </Typography>
         </div>
-      <div className="container mx-auto px-5 px-28" dir='ltr'>
-          <Swiper modules={[Autoplay , Navigation]} {...swiperOptions} >
+      <div className="container mx-auto " dir='ltr'>
+          <Swiper navigation={true} modules={[ Navigation]} {...swiperOptions} className="mySwiper">
             <SwiperSlide>
-              <CardDefault bgColor={"#C7E1F166"} title="د/خالد المصري" description="فرع الدائري" />
+              <CardDefault bgColor={"bg-primary"} title="د/خالد المصري" description="فرع الدائري" />
             </SwiperSlide>
             <SwiperSlide>
-              <CardDefault bgColor={"#C7E1F166"} title="د/خالد المصري" description="فرع الدائري" />
+              <CardDefault bgColor={"bg-secondary"} title="د/خالد المصري" description="فرع الدائري" />
             </SwiperSlide>
             <SwiperSlide>
-              <CardDefault bgColor={"#C7E1F166"} title="د/خالد المصري" description="فرع الدائري" />
+              <CardDefault bgColor={"bg-primary"} title="د/خالد المصري" description="فرع الدائري" />
             </SwiperSlide>
             <SwiperSlide>
-              <CardDefault bgColor={"#C7E1F166"} title="د/خالد المصري" description="فرع الدائري" />
+              <CardDefault bgColor={"bg-secondary"} title="د/خالد المصري" description="فرع الدائري" />
             </SwiperSlide>
             <SwiperSlide>
-              <CardDefault bgColor={"#C7E1F166"} title="د/خالد المصري" description="فرع الدائري" />
+              <CardDefault bgColor={"bg-primary"} title="د/خالد المصري" description="فرع الدائري" />
             </SwiperSlide>
             <SwiperSlide>
-              <CardDefault bgColor={"#C7E1F166"} title="د/خالد المصري" description="فرع الدائري" />
+              <CardDefault bgColor={"bg-secondary"} title="د/خالد المصري" description="فرع الدائري" />
             </SwiperSlide>
           </Swiper>
       </div>
