@@ -1,3 +1,7 @@
+// carousel
+import carousel1 from "../../public/assets/bg-home.png";
+import carousel2 from "../../public/assets/bg-home.png";
+import carousel3 from "../../public/assets/bg-home.png";
 // social media icons
 import facebook from "../../public/assets/facebook.svg";
 import whats from "../../public/assets/whats.svg";
@@ -51,6 +55,11 @@ export const pages = [
     enTitle: "cases",
     arTitle: "الحالات",
     path: "/cases",
+  },
+  {
+    enTitle: "blogs",
+    arTitle: "مدونات",
+    path: "/blogs",
   },
   {
     enTitle: "contact",
@@ -221,6 +230,40 @@ export const branches = [
         jobTitle: "اخصائي طب الاسنان",
       },
     ],
+  },
+];
+export const blogs = [
+  {
+    id: 1,
+    arTitle: "فرع المدينة",
+    enTitle: "El-Maddinah Branch",
+    arDesc: "من أعرق المستشفيات التي نشأت بمنطقة المدينة المنورة",
+    enDesc:
+      "One of the most prestigious hospitals established in the Medina region",
+  },
+  {
+    id: 2,
+    arTitle: "فرع مكة",
+    enTitle: "Makka Branch",
+    arDesc: "من أعرق المستشفيات التي نشأت بمنطقة المدينة المنورة",
+    enDesc:
+      "One of the most prestigious hospitals established in the Medina region",
+  },
+  {
+    id: 3,
+    arTitle: "فرع جدة",
+    enTitle: "Gadah Branch",
+    arDesc: "من أعرق المستشفيات التي نشأت بمنطقة المدينة المنورة",
+    enDesc:
+      "One of the most prestigious hospitals established in the Medina region",
+  },
+  {
+    id: 4,
+    arTitle: "فرع الرياض",
+    enTitle: "Ryad Branch",
+    arDesc: "من أعرق المستشفيات التي نشأت بمنطقة المدينة المنورة",
+    enDesc:
+      "One of the most prestigious hospitals established in the Medina region",
   },
 ];
 export const team = [
@@ -618,12 +661,100 @@ export const departments = [
   },
 ];
 export const cases = [
-  { id: 1,img: "/assets/patient-1.png", arTitle: "د/خالد المصري",enTitle:"dr.khaled elmasry", arDesc: "فرع الدائري", enDesc: "Ring Branch" },
-  { id: 2,img: "/assets/patient-1.png", arTitle: "د/خالد المصري",enTitle:"dr.khaled elmasry", arDesc: "فرع الدائري", enDesc: "Ring Branch" },
-  { id: 3,img: "/assets/patient-1.png", arTitle: "د/خالد المصري",enTitle:"dr.khaled elmasry", arDesc: "فرع الدائري", enDesc: "Ring Branch" },
-  { id: 4,img: "/assets/patient-1.png", arTitle: "د/خالد المصري",enTitle:"dr.khaled elmasry", arDesc: "فرع الدائري", enDesc: "Ring Branch" },
-  { id: 5,img: "/assets/patient-1.png", arTitle: "د/خالد المصري",enTitle:"dr.khaled elmasry", arDesc: "فرع الدائري", enDesc: "Ring Branch" },
-  { id: 6,img: "/assets/patient-1.png", arTitle: "د/خالد المصري",enTitle:"dr.khaled elmasry", arDesc: "فرع الدائري", enDesc: "Ring Branch" },
-  { id: 7,img: "/assets/patient-1.png", arTitle: "د/خالد المصري",enTitle:"dr.khaled elmasry", arDesc: "فرع الدائري", enDesc: "Ring Branch" },
-  { id: 8,img: "/assets/patient-1.png", arTitle: "د/خالد المصري",enTitle:"dr.khaled elmasry", arDesc: "فرع الدائري", enDesc: "Ring Branch" },
+  {
+    id: 1,
+    img: "/assets/patient-1.png",
+    arTitle: "د/خالد المصري",
+    enTitle: "dr.khaled elmasry",
+    arDesc: "فرع الدائري",
+    enDesc: "Ring Branch",
+  },
+  {
+    id: 2,
+    img: "/assets/patient-1.png",
+    arTitle: "د/خالد المصري",
+    enTitle: "dr.khaled elmasry",
+    arDesc: "فرع الدائري",
+    enDesc: "Ring Branch",
+  },
+  {
+    id: 3,
+    img: "/assets/patient-1.png",
+    arTitle: "د/خالد المصري",
+    enTitle: "dr.khaled elmasry",
+    arDesc: "فرع الدائري",
+    enDesc: "Ring Branch",
+  },
+  {
+    id: 4,
+    img: "/assets/patient-1.png",
+    arTitle: "د/خالد المصري",
+    enTitle: "dr.khaled elmasry",
+    arDesc: "فرع الدائري",
+    enDesc: "Ring Branch",
+  },
+  {
+    id: 5,
+    img: "/assets/patient-1.png",
+    arTitle: "د/خالد المصري",
+    enTitle: "dr.khaled elmasry",
+    arDesc: "فرع الدائري",
+    enDesc: "Ring Branch",
+  },
+  {
+    id: 6,
+    img: "/assets/patient-1.png",
+    arTitle: "د/خالد المصري",
+    enTitle: "dr.khaled elmasry",
+    arDesc: "فرع الدائري",
+    enDesc: "Ring Branch",
+  },
+  {
+    id: 7,
+    img: "/assets/patient-1.png",
+    arTitle: "د/خالد المصري",
+    enTitle: "dr.khaled elmasry",
+    arDesc: "فرع الدائري",
+    enDesc: "Ring Branch",
+  },
+  {
+    id: 8,
+    img: "/assets/patient-1.png",
+    arTitle: "د/خالد المصري",
+    enTitle: "dr.khaled elmasry",
+    arDesc: "فرع الدائري",
+    enDesc: "Ring Branch",
+  },
+];
+export const CarouselContent = [
+  {
+    id: 1,
+    img: carousel1,
+    arTitle: "مستشفيات د.نزار غلام ",
+    enTitle: "dr.Nizar hospitals",
+    arDesc:
+      "من أعرق المستشفيات التي نشأت بمنطقة المدينة المنورة والتي توفر خدمات طب الاسنان والتجميل.",
+    enDesc:
+      "It is one of the most prestigious hospitals established in the Medina region, which provides dental and cosmetic services.",
+  },
+  {
+    id: 2,
+    img: carousel2,
+    arTitle: "مستشفيات د.نزار غلام ",
+    enTitle: "dr.Nizar hospitals",
+    arDesc:
+      "من أعرق المستشفيات التي نشأت بمنطقة المدينة المنورة والتي توفر خدمات طب الاسنان والتجميل.",
+    enDesc:
+      "It is one of the most prestigious hospitals established in the Medina region, which provides dental and cosmetic services.",
+  },
+  {
+    id: 3,
+    img: carousel3,
+    arTitle: "مستشفيات د.نزار غلام ",
+    enTitle: "dr.Nizar hospitals",
+    arDesc:
+      "من أعرق المستشفيات التي نشأت بمنطقة المدينة المنورة والتي توفر خدمات طب الاسنان والتجميل.",
+    enDesc:
+      "It is one of the most prestigious hospitals established in the Medina region, which provides dental and cosmetic services.",
+  },
 ];

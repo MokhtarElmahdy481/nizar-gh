@@ -30,8 +30,8 @@ export default async function RootLayout({
 }) {
   
   const res = await getSettings()
-  const general = await res?.data?.general
-  console.log(general)
+  const general = await res?.data
+   console.log(general)
   return (
     <html>
       

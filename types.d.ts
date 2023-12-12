@@ -54,7 +54,13 @@ type Department = {
   subImg: StaticImageData;
   doctors: Doctor[];
 };
-
+type Blog = {
+  id: number;
+  arTitle: string;
+  enTitle: string;
+  arDesc: string;
+  enDesc: string;
+}
 type Team = {
   id: number;
   img: any;
@@ -72,3 +78,64 @@ type Team = {
   enTime: string;
 };
 type Case = { id: number,img: any, arTitle: string ,enTitle:string, arDesc: string, enDesc: string }
+
+// ***************************
+
+type Goals = {
+  goals1: string,
+  goals2: string,
+  goals3: string,
+}
+
+ type AboutUs = {
+  "headerTitle": string,
+        "headerDes": string,
+        "valueImage": any,
+        "value_title1": string,
+        "value_des1": string,
+        "valueImage1": any,
+        "value_title2": string,
+        "value_des2": string,
+        "goals": Goals[]
+ }
+
+ type AboutNizar = {
+  "headerTitle": string,
+        "headerTitle": string,
+        "headerDes": string,
+        "aboutDrNazar_image": any,
+        "aboutDrNazar_title": string,
+        "aboutDrNazar_des": string,
+        "album": any[],
+        "album_title": string,
+        "album_des": string
+ }
+type Branch = {
+  "id": number,
+  "title": string,
+  "description": string,
+  "google_map": string
+}
+type Doctor =  {
+  "id": number,
+  "name": string,
+  "des": string,
+  "image": any,
+  "specialists": any,
+  "experience": number,
+  "patient number": number,
+  "work day": string,
+  "branches": Branch[]
+}
+type Case = {
+  "id": number,
+  "before": any,
+  "after": any,
+  "branches": Branch[],
+  "doctroes": Doctor[]
+}
+
+
+
+
+
