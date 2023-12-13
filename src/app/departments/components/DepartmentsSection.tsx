@@ -3,9 +3,8 @@ import Hero from '@/components/common/Hero/Hero'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import DepartmentCard from './DepartmentCard'
-import { departments } from '@/fakers/data'
 
-export default function DepartmentsSection() {
+export default function DepartmentsSection({departments}:{departments: Department[]}) {
     const {t} = useTranslation()
   return (
     <>

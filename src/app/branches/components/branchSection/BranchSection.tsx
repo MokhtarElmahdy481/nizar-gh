@@ -1,10 +1,10 @@
 "use client"
 import Hero from '@/components/common/Hero/Hero'
-import { branches } from '@/fakers/data'
+// import { branches } from '@/fakers/data'
 import React from 'react'
 import BranchCard from '../branchCard/BranchCard'
 import { useTranslation } from 'react-i18next'
-export default function BranchSection() {
+export default function BranchSection({branches}: {branches:Branch[]}) {
     const {t} = useTranslation()
   return (
     <div>

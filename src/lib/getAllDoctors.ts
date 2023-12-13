@@ -1,6 +1,6 @@
-export default async function getAboutUs() {
+export default async function getAllDoctors() {
   const res = await fetch(
-    "http://drnizer.admin.technomasrsystems.com/api/aboutUs",
+    "http://drnizer.admin.technomasrsystems.com/api/doctore",
     {
       headers: {
         lang: "ar",

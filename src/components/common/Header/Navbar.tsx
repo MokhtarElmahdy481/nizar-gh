@@ -14,9 +14,17 @@ import { FaBars } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 
-type Props = {};
+type Props = {
+  general: {
+    logo: string;
+    fav: string;
+    title: string;
+    description: string;
+    copyRight: string;
+  };
+};
 
-export default function Appbar({}: Props) {
+export default function Appbar({general}: Props) {
   return (
     <Navbar
       // variant="gradient"
@@ -42,8 +50,8 @@ export default function Appbar({}: Props) {
           <Image
             width={100}
             height={100}
-            alt="logo/img"
-            src={"/assets/logo.svg"}
+            alt={general?.title}
+            src={general?.logo}
             className="pointer"
           />
         </Link>

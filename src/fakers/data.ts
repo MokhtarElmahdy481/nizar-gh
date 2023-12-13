@@ -93,144 +93,29 @@ export const call = ["+992 665 770 8", "+992 888 3666"];
 export const branches = [
   {
     id: 1,
-    arTitle: "فرع المدينة",
-    enTitle: "El-Maddinah Branch",
-    arDesc: "من أعرق المستشفيات التي نشأت بمنطقة المدينة المنورة",
-    enDesc:
-      "One of the most prestigious hospitals established in the Medina region",
-    location:
-      "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1014.1287817716068!2d31.004005808244997!3d30.561575859718435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2seg!4v1701347203741!5m2!1sen!2seg",
-    bg: "#CEEAE2",
-    isReverse: false,
-    categories: ["الأسنان", "الجلدية و التجميل"],
-    doctors: [
-      {
-        img: team1,
-        name: "احمد السعدني",
-        jobTitle: "اخصائي طب الاسنان",
-      },
-      {
-        img: team2,
-        name: "احمد السعدني",
-        jobTitle: "اخصائي طب الاسنان",
-      },
-      {
-        img: team3,
-        name: "احمد السعدني",
-        jobTitle: "اخصائي طب الاسنان",
-      },
-      {
-        img: team1,
-        name: "احمد السعدني",
-        jobTitle: "اخصائي طب الاسنان",
-      },
-    ],
+  title: "فرع مكة",
+  description: "من أعرق المستشفيات التي نشأت بمنطقة المدينة المنورة",
+  google_map: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1014.1287817716068!2d31.004005808244997!3d30.561575859718435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2seg!4v1701347203741!5m2!1sen!2seg"
   },
   {
     id: 2,
-    arTitle: "فرع مكة",
-    enTitle: "Makka Branch",
-    arDesc: "من أعرق المستشفيات التي نشأت بمنطقة المدينة المنورة",
-    enDesc:
-      "One of the most prestigious hospitals established in the Medina region",
-    location:
-      "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1014.1287817716068!2d31.004005808244997!3d30.561575859718435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2seg!4v1701347203741!5m2!1sen!2seg",
-    bg: "#C7CBF0",
-    isReverse: true,
-    categories: ["العيون", "الباطنة"],
-    doctors: [
-      {
-        img: doc1,
-        name: "احمد السعدني",
-        jobTitle: "اخصائي طب الاسنان",
-      },
-      {
-        img: doc2,
-        name: "احمد السعدني",
-        jobTitle: "اخصائي طب الاسنان",
-      },
-      {
-        img: doc3,
-        name: "احمد السعدني",
-        jobTitle: "اخصائي طب الاسنان",
-      },
-      {
-        img: doc4,
-        name: "احمد السعدني",
-        jobTitle: "اخصائي طب الاسنان",
-      },
-    ],
+  title: "فرع مكة",
+  description: "من أعرق المستشفيات التي نشأت بمنطقة المدينة المنورة",
+  google_map: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1014.1287817716068!2d31.004005808244997!3d30.561575859718435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2seg!4v1701347203741!5m2!1sen!2seg"
   },
   {
     id: 3,
-    arTitle: "فرع جدة",
-    enTitle: "Gadah Branch",
-    arDesc: "من أعرق المستشفيات التي نشأت بمنطقة المدينة المنورة",
-    enDesc:
-      "One of the most prestigious hospitals established in the Medina region",
-    location:
-      "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1014.1287817716068!2d31.004005808244997!3d30.561575859718435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2seg!4v1701347203741!5m2!1sen!2seg",
-    bg: "#C7E1F1",
-    isReverse: false,
-    categories: ["الأسنان", "الأنف و الأذن"],
-    doctors: [
-      {
-        img: doc1,
-        name: "احمد السعدني",
-        jobTitle: "اخصائي طب الاسنان",
-      },
-      {
-        img: doc2,
-        name: "احمد السعدني",
-        jobTitle: "اخصائي طب الاسنان",
-      },
-      {
-        img: doc3,
-        name: "احمد السعدني",
-        jobTitle: "اخصائي طب الاسنان",
-      },
-      {
-        img: doc4,
-        name: "احمد السعدني",
-        jobTitle: "اخصائي طب الاسنان",
-      },
-    ],
+  title: "فرع مكة",
+  description: "من أعرق المستشفيات التي نشأت بمنطقة المدينة المنورة",
+  google_map: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1014.1287817716068!2d31.004005808244997!3d30.561575859718435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2seg!4v1701347203741!5m2!1sen!2seg"
   },
   {
     id: 4,
-    arTitle: "فرع الرياض",
-    enTitle: "Ryad Branch",
-    arDesc: "من أعرق المستشفيات التي نشأت بمنطقة المدينة المنورة",
-    enDesc:
-      "One of the most prestigious hospitals established in the Medina region",
-    location:
-      "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1014.1287817716068!2d31.004005808244997!3d30.561575859718435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2seg!4v1701347203741!5m2!1sen!2seg",
-    bg: "#CEEAE2",
-    isReverse: true,
-    categories: ["العيون", "الباطنة"],
-    doctors: [
-      {
-        img: doc1,
-        name: "احمد السعدني",
-        jobTitle: "اخصائي طب الاسنان",
-      },
-      {
-        img: doc2,
-        name: "احمد السعدني",
-        jobTitle: "اخصائي طب الاسنان",
-      },
-      {
-        img: doc3,
-        name: "احمد السعدني",
-        jobTitle: "اخصائي طب الاسنان",
-      },
-      {
-        img: doc4,
-        name: "احمد السعدني",
-        jobTitle: "اخصائي طب الاسنان",
-      },
-    ],
+  title: "فرع مكة",
+  description: "من أعرق المستشفيات التي نشأت بمنطقة المدينة المنورة",
+  google_map: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1014.1287817716068!2d31.004005808244997!3d30.561575859718435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2seg!4v1701347203741!5m2!1sen!2seg"
   },
+
 ];
 export const blogs = [
   {

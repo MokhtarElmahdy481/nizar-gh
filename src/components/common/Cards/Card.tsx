@@ -9,7 +9,7 @@ import {
   import { twMerge } from "tailwind-merge";
 import Image from "next/image";
    type CardProps = {
-    title: string;
+    title?: string;
     description?: string;
     bgColor?: string;
     image?: any;

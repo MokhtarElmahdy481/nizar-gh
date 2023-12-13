@@ -4,8 +4,10 @@ import Hero from "@/components/common/Hero/Hero";
 import { useTranslation } from "react-i18next";
 import BranchDetailsSection from "./BranchDetailsSection";
 
-export default function BranchDetails({filterdData}:{filterdData: Branch[]}) {
+export default function BranchDetails({filterdData}:{filterdData: Branch}) {
   const {i18n} = useTranslation()
+  // console.log(filterdData);
+  
   return (
     <div>
       <Hero
@@ -13,16 +15,10 @@ export default function BranchDetails({filterdData}:{filterdData: Branch[]}) {
         showImg={false}
         bg="#CEEAE2"
         hasImg={false}
-        title={
-          i18n.language === "ar"
-            ? filterdData[0].arTitle
-            : filterdData[0].enTitle
-        }
-        desc={
-          i18n.language === "ar" ? filterdData[0].arDesc : filterdData[0].enDesc
-        }
+        title={filterdData.title}
+        desc={filterdData.description}
       />
-      <BranchDetailsSection data={filterdData[0]} />
+      <BranchDetailsSection data={filterdData} />
     </div>
   )
 }

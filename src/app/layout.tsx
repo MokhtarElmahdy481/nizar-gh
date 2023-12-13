@@ -15,8 +15,7 @@ import getSettings from '@/lib/getSettings'
 export async function generateMetadata(): Promise<Metadata> {
  
   // fetch data
-  const res = await getSettings()
-  const general = await res?.data?.general
+  const general = await getSettings('general')
  
   return {
     title: general.title,
@@ -29,18 +28,20 @@ export default async function RootLayout({
   children: React.ReactNode
 }) {
   
-  const res = await getSettings()
-  const general = await res?.data
-   console.log(general)
+  const general = await getSettings('general')
+  const socialMedia = await getSettings('socialMedia')
+
+
+   console.log(socialMedia)
   return (
     <html>
       
         <LangWrapper>
-        <Header/>
+        <Header general={general} />
         <main className='flex-1'>
         {children}
         </main>
-        <Footer/>
+        <Footer general={general} socialMedia={socialMedia} />
         </LangWrapper>
       
     </html>

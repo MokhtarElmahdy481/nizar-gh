@@ -6,21 +6,17 @@ import DepartmentDetailsData from "./DepartmentDetailsData";
 // import DepartmentDetails from "@/components/departmentDetails/DepartmentDetails";
 export default function DepartmentDetailsSection({filterdData}: {filterdData:Department[]}) {
     const { i18n } = useTranslation();
+    console.log(filterdData[0].specialist);
+    
 
   return (
     <>
         <Hero
-        text={
-          i18n.language === "ar"
-            ? filterdData[0].arTitle
-            : filterdData[0].enTitle
-        }
+        text={filterdData[0]?.title}
         showImg={true}
         hasImg={false}
         showDesc={true}
-        desc={
-          i18n.language === "ar" ? filterdData[0].arDesc : filterdData[0].enDesc
-        }
+        desc={filterdData[0]?.des}
         bg="#C7E1F1"
       />
       <DepartmentDetailsData data={filterdData[0]} />

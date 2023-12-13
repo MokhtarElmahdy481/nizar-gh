@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default async function AboutNizar() {
   const res = await getAboutDrNazar()
   const aboutNizar = await res?.data
-  console.log(aboutNizar)
+  // console.log(aboutNizar)
   return (
     <div>
         <AboutNizarSection aboutNizar={aboutNizar}/>

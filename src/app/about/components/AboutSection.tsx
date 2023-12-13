@@ -4,8 +4,8 @@ import { Typography } from "@/configurations/materialconfig";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 
-export default function AboutSection({aboutUs}:{aboutUs:AboutUs}) {
-    const {t} = useTranslation()
+export default function AboutSection({ aboutUs }: { aboutUs: AboutUs }) {
+  const { t } = useTranslation();
   return (
     <>
       <Hero showImg={true} showDesc={false} text={aboutUs?.headerTitle} />
@@ -58,12 +58,13 @@ export default function AboutSection({aboutUs}:{aboutUs:AboutUs}) {
             الاهداف
           </Typography>
         </div>
-          <ul className="flex justify-center text-xl gap-8">
-          
-            <li className="list-disc">{aboutUs?.goals[0].goals1}</li>
-            <li className="list-disc">{aboutUs?.goals[1].goals2}</li>
-            <li className="list-disc">{aboutUs?.goals[2].goals3}</li>
-          </ul>
+        <ul className="flex justify-center text-xl gap-8">
+          {aboutUs?.goals?.map((goal, index) => (
+            <li className="list-disc" key={index}>
+              {goal}
+            </li>
+          ))}
+        </ul>
       </div>
       <div className="bg-[#CEEAE2] py-3 mb-20">
         <div className="container mx-auto px-5">
@@ -109,5 +110,5 @@ export default function AboutSection({aboutUs}:{aboutUs:AboutUs}) {
         </div>
       </div>
     </>
-  )
+  );
 }

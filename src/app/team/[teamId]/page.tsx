@@ -1,6 +1,7 @@
-import { team } from '@/fakers/data'
+// import { team } from '@/fakers/data'
 import React from 'react'
 import TeamMemberSection from './components/TeamMemberSection'
+import getAllDoctors from '@/lib/getAllDoctors'
 
 type Props = {
   params : {
@@ -8,8 +9,12 @@ type Props = {
   }
 }
 
-export default function TeamMember({params:{teamId}}: Props) {
-  const filterdData = team.filter((item) => item.id === +teamId);
+export default async function TeamMember({params:{teamId}}: Props) {
+  const res = await getAllDoctors()
+  const doctors = await res?.data
+  const filterdData = doctors.filter((item: Doctor) => item.id === +teamId);
+  // console.log(filterdData);
+  
   return (
     <div>
       <TeamMemberSection filterdData={filterdData} />
@@ -18,5 +23,7 @@ export default function TeamMember({params:{teamId}}: Props) {
 }
 
 export async function generateStaticParams(){
-  return team.map(item => ({teamId: item.id.toString()}))
+  const res = await getAllDoctors()
+  const doctors = await res?.data
+  return doctors.map((item:Doctor) => ({teamId: item.id.toString()}))
 }

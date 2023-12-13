@@ -16,15 +16,15 @@ export default function DepartmentCard({ data }: Props) {
     >
       <div className=" flex items-center gap-4 mb-10">
         <div className="">
-          <Image src={data?.img} alt="" />
+          <Image src={data?.icon} alt="" width={700} height={200} className="w-full" />
         </div>
         <Typography className="font-bold text-2xl">
-          {i18n.language == "ar" ? data?.arTitle : data?.enTitle}
+          {data?.title}
         </Typography>
       </div>
 
       <Typography className="font-normal text-lg">
-        {i18n.language == "ar" ? data?.arDesc : data?.enDesc}
+        {data?.des}
       </Typography>
       <Link href={`/departments/${data.id}`}>
       <Button

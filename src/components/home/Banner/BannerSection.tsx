@@ -2,13 +2,13 @@
 import React from "react";
 import Hero from "@/components/common/Hero/Hero";
 import { Button, Typography } from "@/configurations/materialconfig";
-import { departments } from '../../../fakers/data';
+// import { departments } from '../../../fakers/data';
 import { useTranslation } from "react-i18next";
 import DepartmentCard from "@/app/departments/components/DepartmentCard";
 import Caroousel from "@/components/common/Carousel";
 
 
-export default function BannerSection() {
+export default function BannerSection({departments}:{departments:Department[]}) {
   const {t,i18n} = useTranslation()
   
   return (

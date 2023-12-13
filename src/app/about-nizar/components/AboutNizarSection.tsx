@@ -13,6 +13,8 @@ const imageList = [
 
 export default function AboutNizarSection({aboutNizar}:{aboutNizar:AboutNizar}) {
     const {t} = useTranslation()
+    console.log("aboutNizar: ",aboutNizar);
+    
   return (
     <>
         <Hero showImg={true} showDesc={false} title={aboutNizar?.headerTitle} />

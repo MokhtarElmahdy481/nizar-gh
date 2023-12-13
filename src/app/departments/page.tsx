@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default async function DepartmentsPage() {
   const res = await getDepartments()
   const departments = await res?.data
-  console.log(departments)
+  // console.log(departments)
   return (
     <div>
       <DepartmentsSection departments={departments}/>
